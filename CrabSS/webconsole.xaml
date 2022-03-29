@@ -1,0 +1,24 @@
+﻿<mah:MetroWindow 
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
+        x:Class="CrabSS.webconsole"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrabSS"
+        mc:Ignorable="d"
+        Title="网页控制台 - 测试版" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <!--经典Grid Bug-->
+    <Grid Height="450" Width="800">
+        <Label Content="Web Console Vue" HorizontalAlignment="Left" Height="56" Margin="14,19,0,0" VerticalAlignment="Top" Width="197" FontSize="16" FontFamily="Segoe UI"/>
+        <Label Content="这个控制台需要先下载 nodejs 和 yarn 才能正常使用。后端还需要python3+flask。总之很烂" HorizontalAlignment="Left" Height="26" Margin="154,24,0,0" VerticalAlignment="Top" Width="526" FontFamily="Segoe UI" Foreground="#B2000000"/>
+        <Label Content="设备ID" HorizontalAlignment="Left" Height="31" Margin="15,69,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Content="用户名默认为 root 。密码可以更改。" HorizontalAlignment="Left" Height="31" Margin="14,113,0,0" VerticalAlignment="Top" Width="206"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="85,69,0,0" TextWrapping="Wrap" Text="设备ID" VerticalAlignment="Top" Width="256"  IsReadOnly="True"/>
+        <Button Content="一键下载依赖" HorizontalAlignment="Left" Height="30" Margin="19,161,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="启动服务端" Style="{StaticResource MahApps.Styles.Button.Square.Accent}" HorizontalAlignment="Left" Height="35" Margin="20,291,0,0" VerticalAlignment="Top" Width="102"/>
+        <!--这些代码仅供测试-->
+
+    </Grid>
+</mah:MetroWindow>
