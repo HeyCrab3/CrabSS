@@ -152,5 +152,11 @@ namespace CrabSS
             about tile = new();
             tile.Show();
         }
+
+        private void login_Click(object sender, RoutedEventArgs e)
+        {
+            login login = new();
+            login.Show();
+        }
     }
 }

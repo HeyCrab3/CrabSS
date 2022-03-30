@@ -8,8 +8,9 @@
     mc:Ignorable="d"
         Title="插件管理" Height="450" Width="800">
     <Grid Height="450">
-        <mah:DropDownButton Click="addplugins_Click" Content="安装插件" x:Name="addplugins" HorizontalAlignment="Left" Height="28" Margin="14,16,0,0" VerticalAlignment="Top" Width="93">
+        <mah:DropDownButton Content="选择选项" HorizontalAlignment="Left" Height="28" Margin="14,16,0,0" VerticalAlignment="Top" Width="93">
             <mah:DropDownButton.Items>
+                <MenuItem x:Name="addplugins" Click="addplugins_Click"  Cursor="" Header="安装插件"/>
                 <MenuItem x:Name="open"   Cursor="" Header="打开插件目录"/>
                 <MenuItem x:Name="delete"   Cursor="" Header="删除插件"/>
             </mah:DropDownButton.Items>

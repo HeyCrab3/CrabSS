@@ -1,0 +1,19 @@
+﻿<mah:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrabSS"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="CrabSS.login"
+        mc:Ignorable="d"
+        Title="登录" Height="450" Width="800">
+    <Grid>
+        <Grid x:Name="logina" HorizontalAlignment="Left" Height="369" Margin="13,13,0,0" VerticalAlignment="Top" Width="735">
+            <Label Content="登录到 CrabAPI 账号（Beta）" HorizontalAlignment="Left" Height="35" Margin="14,14,0,0" VerticalAlignment="Top" Width="220" FontSize="16"/>
+            <TextBox x:Name="email" HorizontalAlignment="Left" Height="33" Margin="21,63,0,0" TextWrapping="Wrap" Text="用户名/邮箱" VerticalAlignment="Top" Width="363"/>
+            <PasswordBox x:Name="pwd" HorizontalAlignment="Left" Height="33" Margin="21,103,0,0" VerticalAlignment="Top" Width="363" mah:PasswordBoxHelper.CapsLockWarningToolTip="大写锁定打开" mah:PasswordBoxHelper.CapsLockIcon="✔" AutomationProperties.HelpText="密码" Password="密码"/>
+            <Button Content="登录" x:Name="loginbtn" HorizontalAlignment="Left" Height="35" Margin="26,159,0,0" VerticalAlignment="Top" Width="82" Click="loginbtn_Click"/>
+        </Grid>
+
+    </Grid>
+</mah:MetroWindow>

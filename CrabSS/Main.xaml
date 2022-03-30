@@ -64,5 +64,14 @@
                 Height="40"
                 Kind="InformationCircle" />
         </mah:Tile>
+        <mah:Tile Title="登录"
+            Margin="666,308,387,402"
+            x:Name="login"
+            mah:ControlsHelper.MouseOverBorderBrush="{DynamicResource MahApps.Brushes.ThemeForeground}"
+            HorizontalTitleAlignment="Right" Background="{DynamicResource MahApps.Brushes.Border.NonActive}" Width="147" Click="login_Click">
+            <iconPacks:PackIconModern Width="40"
+                Height="40"
+                Kind="User" />
+        </mah:Tile>
     </Grid>
 </mah:MetroWindow>

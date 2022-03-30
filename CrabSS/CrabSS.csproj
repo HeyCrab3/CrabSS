@@ -44,30 +44,42 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="image\00.jpg" />
-    <EmbeddedResource Include="image\1.jpg" />
-    <EmbeddedResource Include="image\CrabSS.png" />
-    <EmbeddedResource Include="image\QQ图片20210515155101.jpg" />
-    <EmbeddedResource Include="image\QQ图片20210721191245.png" />
-    <EmbeddedResource Include="image\QQ图片20220131105852.jpg" />
-    <EmbeddedResource Include="thanks\aliyun.png">
+    <Resource Include="image\00.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="thanks\gezi.jpg">
+    </Resource>
+    <Resource Include="image\1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="thanks\liangyin.jpg">
+    </Resource>
+    <Resource Include="image\CrabSS.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="thanks\mossfrp.jpg">
+    </Resource>
+    <Resource Include="image\QQ图片20210515155101.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="thanks\pptlab.jpg">
+    </Resource>
+    <Resource Include="image\QQ图片20210721191245.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="thanks\tencent-cloud-black.png">
+    </Resource>
+    <Resource Include="image\QQ图片20220131105852.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </Resource>
+    <Content Include="thanks\aliyun.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="thanks\gezi.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="thanks\liangyin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="thanks\mossfrp.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="thanks\pptlab.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="thanks\tencent-cloud-black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
