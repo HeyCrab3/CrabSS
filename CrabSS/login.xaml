@@ -14,6 +14,10 @@
             <PasswordBox x:Name="pwd" HorizontalAlignment="Left" Height="33" Margin="21,103,0,0" VerticalAlignment="Top" Width="363" mah:PasswordBoxHelper.CapsLockWarningToolTip="大写锁定打开" mah:PasswordBoxHelper.CapsLockIcon="✔" AutomationProperties.HelpText="密码" Password="密码"/>
             <Button Content="登录" x:Name="loginbtn" HorizontalAlignment="Left" Height="35" Margin="26,159,0,0" VerticalAlignment="Top" Width="82" Click="loginbtn_Click"/>
         </Grid>
-
+        <Grid x:Name="loginb" HorizontalAlignment="Left" Height="369" Margin="13,13,0,0" VerticalAlignment="Top" Width="735" Visibility="Hidden">
+            <Label Content="您的账户" HorizontalAlignment="Left" Height="35" Margin="14,14,0,0" VerticalAlignment="Top" Width="220" FontSize="16"/>
+            <Label x:Name="account" Content="当前登录的账号：null" HorizontalAlignment="Left" Height="35" Margin="14,48,0,0" VerticalAlignment="Top" Width="313"/>
+            <Label x:Name="token" Content="用户 Token：null" HorizontalAlignment="Left" Height="35" Margin="14,77,0,0" VerticalAlignment="Top" Width="333"/>
+        </Grid>
     </Grid>
 </mah:MetroWindow>

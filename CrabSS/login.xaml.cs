@@ -42,6 +42,10 @@ namespace CrabSS
             else
             {
                 this.ShowMessageAsync("操作成功",b.msg);
+                logina.Visibility = Visibility.Hidden;
+                loginb.Visibility = Visibility.Visible;
+                account.Content = "当前登录的账户："+email.Text;
+                token.Content = "用户 Token："+b.token;
             }
         }
     }
