@@ -1,4 +1,5 @@
-﻿using MahApps.Metro.Controls;
+﻿using CrabSS.publicFile;
+using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using Newtonsoft.Json;
 using System;
@@ -19,11 +20,11 @@ using static CrabSS.@public;
 
 namespace CrabSS
 {
-	/// <summary>
-	/// peanutio.xaml 的交互逻辑
-	/// </summary>
-	
-	public partial class peanutio : MetroWindow
+    /// <summary>
+    /// peanutio.xaml 的交互逻辑
+    /// </summary>
+
+    public partial class peanutio : MetroWindow
     {
         public peanutio()
         {

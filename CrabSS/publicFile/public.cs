@@ -125,5 +125,14 @@ namespace CrabSS
 			public string msg { get; set; }
 			public string token { get; set; }
 		}
+		public class COSData
+        {
+			public int code { get; set; }
+			public string msg { get; set; }
+			public string perm { get; set; }
+			public string accessID { get; set; }
+			public string accessKey { get; set; }
+		}
+		public static string COSSign;
 	}
 }

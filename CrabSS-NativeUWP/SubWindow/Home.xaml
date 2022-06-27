@@ -1,0 +1,15 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CrabSS_NativeUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
+    x:Class="CrabSS_NativeUWP.home"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Custom:InfoBar IsOpen="True" Title="提示" Message="原生UWP版本仅供测试使用，请勿放在生产环境下运行！" Margin="26,32,59,347"/>
+        <Custom:InfoBar x:Name="bd" IsOpen="True" Title="公告" Content="?" Margin="30,103,82,237"/>
+    </Grid>
+</Page>

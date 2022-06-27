@@ -1,4 +1,5 @@
-﻿using MahApps.Metro.Controls;
+﻿using CrabSS.publicFile;
+using MahApps.Metro.Controls;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -18,21 +19,18 @@ using static CrabSS.@public;
 
 namespace CrabSS
 {
-	/// <summary>
-	/// about.xaml 的交互逻辑
-	/// </summary>
-public partial class about : MetroWindow
+    /// <summary>
+    /// about.xaml 的交互逻辑
+    /// </summary>
+    public partial class about : MetroWindow
     {
 
         public about()
         {
             InitializeComponent();
-            string result = lingqi.GetHttpResponse("https://api.github.com/repos/crabtechs/crabss", 6000);
             string updatelog = lingqi.GetHttpResponse("https://v6.crabapi.cn/beta2/api/crabss/updatelog", 4000);
             string version = lingqi.GetHttpResponse("https://v6.crabapi.cn/api/crabss/version?channel=beta", 4000);
-            GitHub b = JsonConvert.DeserializeObject<GitHub>(result);
             log.Text = updatelog;
-            starcount.Badge = "Star:" + b.stargazers_count;
             if (version == "0.15-dev")
             {
                 check.Visibility = Visibility.Hidden;
@@ -49,7 +47,7 @@ public partial class about : MetroWindow
 
         private void star_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("explorer","https://github.com/CrabTechs/CrabSS");
+            Process.Start("explorer","https://github.com/HeyCrab3/CrabSS");
         }
     }
 }

@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="CrabSS_NativeUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CrabSS_NativeUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <!-- Content body -->
+            <TextBlock Text="Lorem ipsum dolor sit amet, adipisicing elit." TextWrapping="Wrap" />
+        </StackPanel>
+        <muxc:NavigationView SelectionChanged="nvSample_SelectionChanged" Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}" x:Name="nvSample"  Header="主页">
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem Icon="Home"  Content="主页" Tag="home" IsSelected="True"/>
+                <muxc:NavigationViewItem Icon="Admin"  Content="服务器管理" Tag="serversetting" />
+                <muxc:NavigationViewItem Icon="Play"  Content="控制台" Tag="console" />
+                <muxc:NavigationViewItem  Icon="Caption" Content="插件管理" Tag="plugins" />
+                <muxc:NavigationViewItem  Icon="Account" Content="我的" Tag="settings" />
+            </muxc:NavigationView.MenuItems>
+            <Frame x:Name="contentFrame" />
+        </muxc:NavigationView>
+    </Grid>
+</Page>

@@ -1,4 +1,5 @@
-﻿using MahApps.Metro.Controls;
+﻿using CrabSS.publicFile;
+using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using Newtonsoft.Json;
 using System;
@@ -28,24 +29,24 @@ namespace CrabSS
             InitializeComponent();
         }
 
-        private async void loginbtn_Click(object sender, RoutedEventArgs e)
+        private void loginbtn_Click(object sender, RoutedEventArgs e)
         {
             Dictionary<string, string> data = new Dictionary<string, string>();
-            data.Add("username",email.Text);
-            data.Add("pwd",pwd.Password);
-            var result = lingqi.Post("https://v6.crabapi.cn/beta2/api/login",data);
+            data.Add("username", email.Text);
+            data.Add("pwd", pwd.Password);
+            var result = lingqi.Post("https://v6.crabapi.cn/beta2/api/login", data);
             LoginInfo b = JsonConvert.DeserializeObject<LoginInfo>(result);
             if (b.code != 0)
             {
-                this.ShowMessageAsync("登陆失败",b.msg);
+                this.ShowMessageAsync("登陆失败", b.msg);
             }
             else
             {
-                this.ShowMessageAsync("操作成功",b.msg);
+                this.ShowMessageAsync("操作成功", b.msg);
                 logina.Visibility = Visibility.Hidden;
                 loginb.Visibility = Visibility.Visible;
-                account.Content = "当前登录的账户："+email.Text;
-                token.Content = "用户 Token："+b.token;
+                account.Content = "当前登录的账户：" + email.Text;
+                token.Content = "用户 Token：" + b.token;
             }
         }
     }

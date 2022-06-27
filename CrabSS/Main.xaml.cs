@@ -1,4 +1,5 @@
-﻿using LitJson;
+﻿using CrabSS.publicFile;
+using LitJson;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using Microsoft.Toolkit.Uwp.Notifications;
@@ -81,11 +82,14 @@ namespace CrabSS
                          }**/
                     }
                 }
-                broadcast.Content = lingqi.GetHttpResponse("https://v6.crabapi.cn/api/crabss/broadcast?channel=beta&encode=text", 40000);
-                //string version = lingqi.GetHttpResponse("https://v6.crabapi.cn/api/crabss/version?channel=beta", 40000);
-                string hikotoko = lingqi.GetHttpResponse("https://v1.hitokoto.cn/?encode=text", 40000);
+                try {
+                    broadcast.Content = lingqi.GetHttpResponse("https://v6.crabapi.cn/api/crabss/broadcast?channel=beta&encode=text", 4000);
+                }
+                catch {
+                    broadcast.Content = "无网络或API故障";
+                }
+                string hikotoko = lingqi.GetHttpResponse("https://v1.hitokoto.cn/?encode=text", 4000);
                 Title = "CrabSS 总控中心 | " + hikotoko;
-                // Requires Microsoft.Toolkit.Uwp.Notifications NuGet package version 7.0 or greater
                 try
                 {
                     String path = @"plugins";

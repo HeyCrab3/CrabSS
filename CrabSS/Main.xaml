@@ -37,8 +37,9 @@
                 Height="40"
                 Kind="AppPlus" />
         </mah:Tile>
-        <mah:Tile Title="Peanut.IO 应用商店"
+        <mah:Tile Title="Peanut.IO 应用商店（升级中）"
             x:Name="peanutio"
+            IsEnabled="False"
             Margin="25,286,938,374"
             mah:ControlsHelper.MouseOverBorderBrush="{DynamicResource MahApps.Brushes.ThemeForeground}"
             HorizontalTitleAlignment="Right" Background="#FFD75900" Width="237" Click="peanutio_Click">
@@ -46,9 +47,10 @@
                 Height="40"
                 Kind="Store" />
         </mah:Tile>
-        <mah:Tile Title="网页控制台（Alpha）"
+        <mah:Tile Title="网页控制台（升级中）"
             Margin="296,286,757,376"
                   x:Name="webconsole"
+                  IsEnabled="False"
             mah:ControlsHelper.MouseOverBorderBrush="{DynamicResource MahApps.Brushes.ThemeForeground}"
             HorizontalTitleAlignment="Right" Background="#FFFF0034" Width="147" Click="webconsole_Click">
             <iconPacks:PackIconModern Width="40"
@@ -64,7 +66,7 @@
                 Height="40"
                 Kind="InformationCircle" />
         </mah:Tile>
-        <mah:Tile Title="登录"
+        <mah:Tile Title="登录 啥用没有"
             Margin="666,308,387,402"
             x:Name="login"
             mah:ControlsHelper.MouseOverBorderBrush="{DynamicResource MahApps.Brushes.ThemeForeground}"
